@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlyDreamAir Airlines Official Website | Book National Flight Tickets</title>
+  <link rel="icon" type="image/x-icon" href="assets/American-Airlines.png">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <h1>FlyDreamAir Airlines Booking</h1>
+  </header>
+
+  <main>
+    <h2>Book Your Flight</h2>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="flight">Select Flight</label>
+        <select id="flight" name="flight" required></select>
+      </div>
+      <div class="form-group">
+        <label for="seat">Seat Number</label>
+        <input type="text" id="seat" name="seat" required />
+      </div>
+      <div class="form-group">
+        <label>In-Flight Services</label>
+        <label><input type="checkbox" name="services" value="Meal" /> Meal</label><br />
+        <label><input type="checkbox" name="services" value="Drink" /> Drink</label>
+      </div>
+      <button type="submit">Confirm Booking</button>
+    </form>
+
+    <h2>Booking Data</h2>
+    <pre id="output"></pre>
+  </main>
+
+  <footer>
+    &copy; 2025 FlyDreamAir 
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
