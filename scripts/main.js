@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const flightSelect = document.getElementById("flight");
   const form = document.getElementById("bookingForm");
   const output = document.getElementById("output");
+  const outputSection = document.getElementById("outputSection");
 
   // Fetch flights from JSON file
   fetch("assets/flights.json")
@@ -13,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
         option.textContent = `${f.id}: ${f.from} → ${f.to} (${f.time})`;
         flightSelect.appendChild(option);
       });
+    })
+    .catch((error) => {
+      console.error("Error loading flights:", error);
     });
 
   form.addEventListener("submit", function (e) {
@@ -30,10 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
       flight: formData.get("flight"),
       seat: formData.get("seat"),
       services: services,
+      bookingTime: new Date().toLocaleString()
     };
 
+    // Store booking data in localStorage
     localStorage.setItem("bookingData", JSON.stringify(bookingData, null, 2));
+    
+    // Show output section and display booking data
+    outputSection.style.display = "block";
     output.textContent = JSON.stringify(bookingData, null, 2);
-    alert("Booking confirmed!");
+    
+    // Smooth scroll to output
+    outputSection.scrollIntoView({ behavior: 'smooth' });
+    
+    alert("Booking confirmed! Check your booking details below.");
   });
 });

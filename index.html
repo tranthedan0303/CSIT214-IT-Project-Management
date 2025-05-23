@@ -9,42 +9,88 @@
 </head>
 <body>
   <header>
-    <h1>FlyDreamAir Airlines Booking</h1>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-section">
+          <img src="assets/American-Airlines.png" alt="FlyDreamAir Logo" class="logo-img">
+          <div class="brand-name">FlyDreamAir</div>
+        </div>
+        <nav class="nav-links">
+          <a href="#book">Book</a>
+          <a href="#manage">Manage</a>
+          <a href="#check-in">Check-in</a>
+          <a href="#status">Flight Status</a>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main>
-    <h2>Book Your Flight</h2>
-    <form id="bookingForm">
-      <div class="form-group">
-        <label for="fullName">Full Name</label>
-        <input type="text" id="fullName" name="fullName" required />
+    <div class="container">
+      <div class="hero-section">
+        <h1 class="hero-title">Your Journey Begins Here</h1>
+        <p class="hero-subtitle">Book your perfect flight with FlyDreamAir</p>
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div class="form-group">
-        <label for="flight">Select Flight</label>
-        <select id="flight" name="flight" required></select>
-      </div>
-      <div class="form-group">
-        <label for="seat">Seat Number</label>
-        <input type="text" id="seat" name="seat" required />
-      </div>
-      <div class="form-group">
-        <label>In-Flight Services</label>
-        <label><input type="checkbox" name="services" value="Meal" /> Meal</label><br />
-        <label><input type="checkbox" name="services" value="Drink" /> Drink</label>
-      </div>
-      <button type="submit">Confirm Booking</button>
-    </form>
 
-    <h2>Booking Data</h2>
-    <pre id="output"></pre>
+      <div class="booking-card">
+        <h2 class="booking-title">Book Your Flight</h2>
+        
+        <form id="bookingForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="flight">Select Flight</label>
+              <select id="flight" name="flight" required>
+                <option value="">Choose your flight</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="seat">Preferred Seat</label>
+              <input type="text" id="seat" name="seat" placeholder="e.g., 12A" required />
+            </div>
+          </div>
+
+          <div class="services-section">
+            <div class="services-title">In-Flight Services</div>
+            <div class="services-grid">
+              <div class="service-option">
+                <input type="checkbox" id="meal" name="services" value="Meal" />
+                <label for="meal">Premium Meal Service</label>
+              </div>
+              <div class="service-option">
+                <input type="checkbox" id="drink" name="services" value="Drink" />
+                <label for="drink">Beverage Package</label>
+              </div>
+            </div>
+          </div>
+          
+          <button type="submit" class="submit-btn">Confirm Booking</button>
+        </form>
+
+        <div id="outputSection" class="booking-output" style="display: none;">
+          <div class="output-title">Booking Confirmation</div>
+          <div id="output" class="output-content"></div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    &copy; 2025 FlyDreamAir 
+    <div class="container">
+      <div class="footer-content">
+        &copy; 2025 FlyDreamAir Airlines. All rights reserved.
+      </div>
+    </div>
   </footer>
 
   <script src="scripts/main.js"></script>

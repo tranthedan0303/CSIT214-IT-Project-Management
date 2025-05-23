@@ -1,21 +1,20 @@
 [
-    {
-      "id": "FDA330",
-      "from": "Sydney",
-      "to": "Melbourne",
-      "time": "2025-06-03 09:00"
-    },
-    {
-      "id": "FDA721",
-      "from": "Brisbane",
-      "to": "Perth",
-      "time": "2025-06-12 13:30"
-    },
-    {
-      "id": "FDA125",
-      "from": "Adelaide",
-      "to": "Canberra",
-      "time": "2025-06-24 16:15"
-    }
-  ]
-  
+  {
+    "id": "FDA330",
+    "from": "Sydney",
+    "to": "Melbourne",
+    "time": "2025-06-03 09:00"
+  },
+  {
+    "id": "FDA721",
+    "from": "Brisbane",
+    "to": "Perth",
+    "time": "2025-06-12 13:30"
+  },
+  {
+    "id": "FDA125",
+    "from": "Adelaide",
+    "to": "Canberra",
+    "time": "2025-06-24 16:15"
+  }
+]
