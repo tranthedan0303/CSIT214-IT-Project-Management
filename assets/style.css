@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
   min-height: 100vh;
   color: #333;
 }
@@ -92,14 +96,29 @@ main {
   font-weight: 300;
 }
 
-.booking-card {
+.booking-card, .section-card {
   background: white;
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.section-description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
 }
 
 .booking-title {
@@ -230,36 +249,7 @@ main {
   background: #f8f9fa;
   border-radius: 15px;
   border-left: 4px solid #667eea;
-  animation: fadeInUp 0.5s ease forwards;
 }
-
-.booking-output p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  margin-bottom: 12px;
-  color: #2c3e50;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-.booking-output p strong {
-  color: #667eea;
-  font-family: Arial, Helvetica, sans-serif;
-  
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
 
 .output-title {
   font-size: 18px;
@@ -286,8 +276,119 @@ footer {
   margin-top: 60px;
 }
 
-.footer-content {
-  opacity: 0.8;
+.booking-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modify-btn {
+  background: #28a745;
+  color: white;
+}
+
+.modify-btn:hover {
+  background: #218838;
+}
+
+.cancel-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #c82333;
+}
+
+.flight-status-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid #e9ecef;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.flight-info h3 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.flight-info p {
+  color: #666;
+  font-size: 16px;
+}
+
+.status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  background: #28a745;
+  color: white;
+}
+
+.time-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.departure, .arrival {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.departure h4, .arrival h4 {
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.airport {
+  color: #666;
+  font-size: 14px;
+}
+
+.additional-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.additional-info p {
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  margin: 0;
 }
 
 @media (max-width: 768px) {

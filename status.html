@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Status - FlyDreamAir Airlines</title>
+  <link rel="icon" type="image/x-icon" href="assets/American-Airlines.png">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-section">
+          <img src="assets/American-Airlines.png" alt="FlyDreamAir Logo" class="logo-img">
+          <div class="brand-name">FlyDreamAir</div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Book</a>
+          <a href="manage.html">Manage</a>
+          <a href="checkin.html">Check-in</a>
+          <a href="status.html">Flight Status</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="hero-section">
+        <h1 class="hero-title">Flight Status</h1>
+        <p class="hero-subtitle">Check real-time flight information and updates</p>
+      </div>
+
+      <div class="booking-card">
+        <h2 class="booking-title">Check Flight Status</h2>
+        
+        <form id="statusForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="flightNumber">Flight Number</label>
+              <input type="text" id="flightNumber" name="flightNumber" placeholder="e.g., FDA330" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="flightDate">Flight Date</label>
+              <input type="date" id="flightDate" name="flightDate" required />
+            </div>
+          </div>
+          
+          <button type="submit" class="submit-btn">Check Status</button>
+        </form>
+
+        <div id="flightStatus" class="booking-output" style="display: none;">
+          <div class="output-title">Flight Information</div>
+          <div id="statusDetails" class="flight-status-card">
+            <div class="status-header">
+              <div class="flight-info">
+                <h3 id="flightNum">FDA330</h3>
+                <p id="route">Sydney → Melbourne</p>
+              </div>
+              <div class="status-badge" id="statusBadge">On Time</div>
+            </div>
+            <div class="status-details">
+              <div class="time-info">
+                <div class="departure">
+                  <h4>Departure</h4>
+                  <p class="time" id="depTime">09:00</p>
+                  <p class="airport" id="depAirport">Sydney (SYD)</p>
+                </div>
+                <div class="arrival">
+                  <h4>Arrival</h4>
+                  <p class="time" id="arrTime">10:30</p>
+                  <p class="airport" id="arrAirport">Melbourne (MEL)</p>
+                </div>
+              </div>
+              <div class="additional-info">
+                <p><strong>Gate:</strong> <span id="gate">A12</span></p>
+                <p><strong>Terminal:</strong> <span id="terminal">1</span></p>
+                <p><strong>Aircraft:</strong> <span id="aircraft">Boeing 737-800</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        &copy; 2025 FlyDreamAir Airlines. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/status.js"></script>
+</body>
+</html>

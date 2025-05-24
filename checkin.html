@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Check-in - FlyDreamAir Airlines</title>
+  <link rel="icon" type="image/x-icon" href="assets/American-Airlines.png">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-section">
+          <img src="assets/American-Airlines.png" alt="FlyDreamAir Logo" class="logo-img">
+          <div class="brand-name">FlyDreamAir</div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Book</a>
+          <a href="manage.html">Manage</a>
+          <a href="checkin.html">Check-in</a>
+          <a href="status.html">Flight Status</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="hero-section">
+        <h1 class="hero-title">Online Check-in</h1>
+        <p class="hero-subtitle">Check in online and get your boarding pass</p>
+      </div>
+
+      <div class="booking-card">
+        <h2 class="booking-title">Check-in to Your Flight</h2>
+        
+        <form id="checkinForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="checkinRef">Booking Reference</label>
+              <input type="text" id="checkinRef" name="checkinRef" placeholder="Enter your booking reference" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="passengerName">Passenger Name</label>
+              <input type="text" id="passengerName" name="passengerName" placeholder="Enter passenger name" required />
+            </div>
+          </div>
+
+          <div class="services-section">
+            <div class="services-title">Additional Services</div>
+            <div class="services-grid">
+              <div class="service-option">
+                <input type="checkbox" id="baggage" name="services" value="Extra Baggage" />
+                <label for="baggage">Add Extra Baggage</label>
+              </div>
+              <div class="service-option">
+                <input type="checkbox" id="priority" name="services" value="Priority Boarding" />
+                <label for="priority">Priority Boarding</label>
+              </div>
+            </div>
+          </div>
+          
+          <button type="submit" class="submit-btn">Check In</button>
+        </form>
+
+        <div id="boardingPass" class="booking-output" style="display: none;">
+          <div class="output-title">Boarding Pass</div>
+          <div id="passDetails" class="output-content"></div>
+          <button class="submit-btn" onclick="window.print()">Print Boarding Pass</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        &copy; 2025 FlyDreamAir Airlines. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/checkin.js"></script>
+</body>
+</html>
