@@ -3,18 +3,135 @@
     "id": "FDA330",
     "from": "Sydney",
     "to": "Melbourne",
-    "time": "2025-06-03 09:00"
+    "time": "2025-06-03 09:00",
+    "duration": "1h 30m",
+    "aircraft": "Boeing 737-800",
+    "price": 189
+  },
+  {
+    "id": "FDA331",
+    "from": "Sydney",
+    "to": "Melbourne",
+    "time": "2025-06-03 14:30",
+    "duration": "1h 30m",
+    "aircraft": "Boeing 737-800",
+    "price": 169
+  },
+  {
+    "id": "FDA332",
+    "from": "Sydney",
+    "to": "Melbourne",
+    "time": "2025-06-03 18:45",
+    "duration": "1h 30m",
+    "aircraft": "Airbus A320",
+    "price": 179
   },
   {
     "id": "FDA721",
     "from": "Brisbane",
     "to": "Perth",
-    "time": "2025-06-12 13:30"
+    "time": "2025-06-12 13:30",
+    "duration": "5h 30m",
+    "aircraft": "Airbus A320",
+    "price": 389
+  },
+  {
+    "id": "FDA722",
+    "from": "Brisbane",
+    "to": "Perth",
+    "time": "2025-06-12 19:15",
+    "duration": "5h 30m",
+    "aircraft": "Boeing 737-800",
+    "price": 359
   },
   {
     "id": "FDA125",
     "from": "Adelaide",
     "to": "Canberra",
-    "time": "2025-06-24 16:15"
+    "time": "2025-06-24 16:15",
+    "duration": "2h 30m",
+    "aircraft": "Boeing 737-700",
+    "price": 229
+  },
+  {
+    "id": "FDA126",
+    "from": "Adelaide",
+    "to": "Canberra",
+    "time": "2025-06-24 08:00",
+    "duration": "2h 30m",
+    "aircraft": "Boeing 737-700",
+    "price": 249
+  },
+  {
+    "id": "FDA540",
+    "from": "Sydney",
+    "to": "Brisbane",
+    "time": "2025-06-05 11:20",
+    "duration": "1h 25m",
+    "aircraft": "Airbus A320",
+    "price": 159
+  },
+  {
+    "id": "FDA541",
+    "from": "Sydney",
+    "to": "Brisbane",
+    "time": "2025-06-05 16:40",
+    "duration": "1h 25m",
+    "aircraft": "Boeing 737-800",
+    "price": 149
+  },
+  {
+    "id": "FDA890",
+    "from": "Melbourne",
+    "to": "Adelaide",
+    "time": "2025-06-08 12:10",
+    "duration": "1h 20m",
+    "aircraft": "Boeing 737-700",
+    "price": 139
+  },
+  {
+    "id": "FDA891",
+    "from": "Melbourne",
+    "to": "Adelaide",
+    "time": "2025-06-08 17:30",
+    "duration": "1h 20m",
+    "aircraft": "Airbus A320",
+    "price": 129
+  },
+  {
+    "id": "FDA600",
+    "from": "Perth",
+    "to": "Sydney",
+    "time": "2025-06-15 06:45",
+    "duration": "5h 15m",
+    "aircraft": "Boeing 737-800",
+    "price": 419
+  },
+  {
+    "id": "FDA601",
+    "from": "Perth",
+    "to": "Sydney",
+    "time": "2025-06-15 14:20",
+    "duration": "5h 15m",
+    "aircraft": "Airbus A320",
+    "price": 399
+  },
+  {
+    "id": "FDA450",
+    "from": "Canberra",
+    "to": "Brisbane",
+    "time": "2025-06-18 09:30",
+    "duration": "1h 45m",
+    "aircraft": "Boeing 737-700",
+    "price": 189
+  },
+  {
+    "id": "FDA451",
+    "from": "Canberra",
+    "to": "Brisbane",
+    "time": "2025-06-18 15:50",
+    "duration": "1h 45m",
+    "aircraft": "Airbus A320",
+    "price": 179
   }
 ]
